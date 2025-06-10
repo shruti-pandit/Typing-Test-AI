@@ -488,8 +488,10 @@ async function generateText() {
   const userPrompt = userPromptInput.value.trim();
 
   try {
-    // const apiUrl = new URL('https://goldfish-app-yq66j.ondigitalocean.app/api/generate-text');
-    const apiUrl = new URL("http://localhost:3000/api/generate-text");
+    const apiUrl = new URL(
+      "https://goldfish-app-yq66j.ondigitalocean.app/api/generate-text"
+    );
+    // const apiUrl = new URL("http://localhost:3000/api/generate-text");
     apiUrl.searchParams.append("wordLimit", wordLimit);
     apiUrl.searchParams.append("type", generationType);
 
