@@ -489,7 +489,7 @@ async function generateText() {
 
   try {
     const apiUrl = new URL(
-      "https://goldfish-app-yq66j.ondigitalocean.app/api/generate-text"
+      "https://typing-test-ai-backend.onrender.com/api/generate-text"
     );
     // const apiUrl = new URL("http://localhost:3000/api/generate-text");
     apiUrl.searchParams.append("wordLimit", wordLimit);
